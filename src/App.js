@@ -23,14 +23,13 @@ function App() {
 
       <img src={img1} alt=""></img>
       <button onClick={handleClickToOpen}>Open Demo</button>
-      //dialog box with images
-
+     
       <dialog className='dialogbox' open={open} >
         <dialogContent>
           <img className='Dialogimg' src={img1} />
         </dialogContent>
 
-        // code for showing loading gif
+       
         <button onClick={() => {
           setImage(false);
           setTimeout(() => setImg(false), 7000); // this line collapse the image after 7 second
@@ -39,7 +38,7 @@ function App() {
           setImg(!image);
         }}>Show Gif</button>
 
-       
+        
         <button className="btn" onClick={() => {
           setImg(false);
           setOpen(false);
