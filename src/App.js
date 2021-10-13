@@ -24,6 +24,7 @@ function App() {
       <img src={img1} alt=""></img>
       <button onClick={handleClickToOpen}>Open Demo</button>
       //dialog box with images
+
       <dialog className='dialogbox' open={open} >
         <dialogContent>
           <img className='Dialogimg' src={img1} />
@@ -38,7 +39,7 @@ function App() {
           setImg(!image);
         }}>Show Gif</button>
 
-        // after click on show graph display graph image
+       
         <button className="btn" onClick={() => {
           setImg(false);
           setOpen(false);
@@ -47,7 +48,7 @@ function App() {
 
 
       </dialog>
-       // if states are true display images
+       
       {image && <img className='loadimg' image={image} src={img2}></img>}
       {image2 && <img image2={image2} src={img3}></img>}
 
